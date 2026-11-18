@@ -8,4 +8,6 @@ export const products: Product[] = [
   { id: "cloud-throw", name: "Cloud Throw", price: 76, category: "Home", description: "A lightweight woven throw that brings texture and softness to your favorite chair.", accent: "#bae6fd" },
   { id: "peak-bottle", name: "Peak Bottle", price: 42, category: "Outdoors", description: "Double-wall insulated stainless steel bottle that keeps drinks cold for 24 hours.", accent: "#a7f3d0" },
 ];
-export function getProduct(id: string) { return products.find((product) => product.id === id); }
+export function getProduct(id: string): Product | undefined {
+  return products.find((product) => product.id === id);
+}
