@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 648" width="600" height="648">
+  <defs>
+    <radialGradient id="grad-peak-bottle" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#a7f3d0" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#a7f3d0" stop-opacity="1"/>
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <!-- Background with subtle lighting -->
+  <rect width="600" height="648" fill="url(#grad-peak-bottle)"/>
+  <!-- Decorative Grid / Frame -->
+  <rect x="30" y="30" width="540" height="588" rx="18" fill="none" stroke="rgba(26,26,24,0.06)" stroke-width="2"/>
+  <!-- Category Watermark -->
+  <text x="300" y="110" font-family="'DM Sans', system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="4" fill="rgba(26,26,24,0.3)" text-anchor="middle" text-transform="uppercase">SHIPYARD OBJECT ARCHIVE</text>
+  <!-- Product Illustration -->
+  <g filter="url(#shadow)">
+    
+      <!-- Bottle Cap Loop -->
+      <path d="M 275 160 A 25 25 0 0 1 325 160 L 325 180 L 275 180 Z" fill="#1a1a18"/>
+      <!-- Neck -->
+      <rect x="270" y="180" width="60" height="45" rx="6" fill="#065f46" stroke="#1a1a18" stroke-width="8"/>
+      <!-- Bottle Body -->
+      <rect x="235" y="225" width="130" height="235" rx="30" fill="#047857" stroke="#1a1a18" stroke-width="10"/>
+      <!-- Stainless steel accent bands -->
+      <line x1="235" y1="250" x2="365" y2="250" stroke="#a7f3d0" stroke-width="5"/>
+      <line x1="235" y1="420" x2="365" y2="420" stroke="#a7f3d0" stroke-width="5"/>
+      <!-- Mountain peak logo -->
+      <path d="M 270 340 L 290 305 L 310 340 Z" fill="#a7f3d0"/>
+      <path d="M 300 340 L 315 315 L 330 340 Z" fill="#6ee7b7"/>
+    
+  </g>
+  <!-- Product Title Stamp -->
+  <text x="300" y="565" font-family="'Playfair Display', Georgia, serif" font-size="28" font-weight="500" font-style="italic" fill="#1a1a18" text-anchor="middle">Peak Bottle</text>
+  <text x="300" y="590" font-family="'DM Mono', monospace" font-size="11" letter-spacing="2" fill="rgba(26,26,24,0.5)" text-anchor="middle">EDITION 2026 // REF: PEAK-BOTTLE</text>
+</svg>
