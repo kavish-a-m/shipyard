@@ -2,7 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Product } from "../data/products";
 
-export default function ProductCard({ product }: { product: Product }) {
+export default function ProductCard({
+  product,
+  priority = false,
+}: {
+  product: Product;
+  priority?: boolean;
+}) {
   return (
     <Link className="product-card" href={`/products/${product.id}`}>
       <div className="product-art" style={{ backgroundColor: product.accent }}>
@@ -11,6 +17,7 @@ export default function ProductCard({ product }: { product: Product }) {
           alt={product.name}
           width={600}
           height={648}
+          priority={priority}
           className="product-image"
         />
         {product.badge && <span className="badge">{product.badge}</span>}
