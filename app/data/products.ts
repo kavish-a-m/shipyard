@@ -6,6 +6,7 @@ export type Product = {
   description: string;
   accent: string;
   badge?: string;
+  image: string;
 };
 
 export const products: Product[] = [
@@ -17,6 +18,7 @@ export const products: Product[] = [
     description: "Immersive wireless headphones with all-day comfort and rich, detailed sound.",
     accent: "#d9f99d",
     badge: "Bestseller",
+    image: "/products/wave-runner.svg",
   },
   {
     id: "orbit-lamp",
@@ -25,6 +27,7 @@ export const products: Product[] = [
     category: "Home",
     description: "A warm, sculptural light that turns any desk or bedside table into a calm corner.",
     accent: "#fed7aa",
+    image: "/products/orbit-lamp.svg",
   },
   {
     id: "field-notebook",
@@ -33,6 +36,7 @@ export const products: Product[] = [
     category: "Stationery",
     description: "Lay-flat recycled paper notebook for ideas, sketches, and plans on the move.",
     accent: "#bfdbfe",
+    image: "/products/field-notebook.svg",
   },
   {
     id: "terra-mug",
@@ -41,6 +45,7 @@ export const products: Product[] = [
     category: "Kitchen",
     description: "Hand-finished stoneware with a generous handle and a beautiful matte glaze.",
     accent: "#fecdd3",
+    image: "/products/terra-mug.svg",
   },
   {
     id: "metro-pack",
@@ -50,6 +55,7 @@ export const products: Product[] = [
     description: "A weather-resistant everyday pack with thoughtful storage for busy commutes.",
     accent: "#ddd6fe",
     badge: "New",
+    image: "/products/metro-pack.svg",
   },
   {
     id: "cloud-throw",
@@ -58,6 +64,7 @@ export const products: Product[] = [
     category: "Home",
     description: "A lightweight woven throw that brings texture and softness to your favorite chair.",
     accent: "#bae6fd",
+    image: "/products/cloud-throw.svg",
   },
   {
     id: "peak-bottle",
@@ -66,6 +73,7 @@ export const products: Product[] = [
     category: "Outdoors",
     description: "Double-wall insulated stainless steel bottle that keeps drinks cold for 24 hours.",
     accent: "#a7f3d0",
+    image: "/products/peak-bottle.svg",
   },
 ];
 

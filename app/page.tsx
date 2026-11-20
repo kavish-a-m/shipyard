@@ -1,6 +1,16 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import ProductCard from "./components/ProductCard";
 import { products } from "./data/products";
+
+export const metadata: Metadata = {
+  title: "ShipYard — Good things, well made",
+  description: "A considered selection of useful objects, designed to be used often and kept for a long time.",
+  openGraph: {
+    title: "ShipYard — Good things, well made",
+    description: "A considered selection of useful objects, designed to be used often and kept for a long time.",
+  },
+};
 
 export default function Home() {
   return (
